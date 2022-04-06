@@ -77,6 +77,79 @@ img{
     display: grid;
     gap: var(--mb15);
 }
+.header{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bodyColor);
+}
+.nav{
+    max-width: 968px;
+    height: var(--headerHeight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo, 
+.nav__toggle{
+    color: var(--titleColor);
+    font-weight: var(--fontMedium);
+}
+.nav__logo:hover{
+    color: var(--firstColor);
+}
+.nav__toggle{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.nav__toggle:hover{
+    color: var(--firstColor);
+}
+.nav__list{
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--smallFontSize);
+    color: var(--titleColor);
+    font-weight: var(--fontMedium);
+}
+.nav__link:hover{
+    color: var(--firstColor);
+}
+.nav__icon{
+    font-size: 1.2rem;
+}
+.nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--firstColor);
+}
+.nav__close:hover{
+    color: var(--firstColor);
+}
+
+@media screen and (max-width:767px){
+    .nav__menu{
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bodyColor);
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px black;
+        border-radius: 1.5rem 1.5rem;
+        transition: .6s;
+    }
+    
+}
 @media screen and (min-width:968px){
     :root{
           /*size*/
@@ -88,4 +161,8 @@ img{
     --smallFontSize:0.85rem;
     --samallerFontSize:0.75rem;
     }
+}
+/*jsDoM*/
+.showMenu{
+    bottom: 0;
 }
