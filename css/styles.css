@@ -1,0 +1,91 @@
+/*font import*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/*var*/
+:root{
+    --headerHeight : 3rem;
+    /*colors*/
+    --hueColor: 250;
+    --firstColor: hsl(var(--hueColor),69%,61%);
+    --firstColorSecond: hsl(var(--hueColor),69%,61%);
+    --firstColorAlt: hsl(var(--hueColor),57%,53%);
+    --firstColorlighter: hsl(var(--hueColor),92%,85%);
+    --titleColor: hsl(var(--hueColor),8%,15%);
+    --textColor: hsl(var(--hueColor),8%,45%);
+    --textColorLighter: hsl(var(--hueColor),8%,65%);
+    --inputColor: hsl(var(--hueColor),70%,96%);
+    --bodyColor: hsl(var(--hueColor),60%,99%);
+    --containerColor: #fff;
+    /*font*/
+    --bodyFont:'Poppins', sans-serif;
+    /*size*/
+    --bigFontSize:2rem;
+    --h1FontSize:1.5rem;
+    --h2FontSize:1.3rem;
+    --h3FontSize:1.1rem;
+    --normalFontSize:1rem;
+    --smallFontSize:0.85rem;
+    --samallerFontSize:0.75rem;
+    /*weight*/
+    --fontMedium:500;
+    --fontSemiBold:600;
+    /*margin bot*/
+    --mb025:.25rem;
+    --mb05:.5rem;
+    --mb075:.75rem;
+    --mb1:1rem;
+    --mb15:1.5rem;
+    --mb2:2rem;
+    --mb25:2.5rem;
+    --mb3:3rem;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 0 var(--headerHeight) 0;
+    font-family: var(--bodyFont);
+    font-size: var(--normalFontSize);
+    background-color: var(--bodyColor);
+    color: var(--textColor);
+}
+h1,h2,h3,h4{
+    color: var(--titleColor);
+    font-weight: var(--fontSemiBold);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*end reset and vars*/
+.container{
+    max-width: 768px;
+    margin-left: var(--mb15);
+    margin-right: var(--mb15);
+}
+.grid{
+    display: grid;
+    gap: var(--mb15);
+}
+@media screen and (min-width:968px){
+    :root{
+          /*size*/
+    --bigFontSize:3rem;
+    --h1FontSize:2.2rem;
+    --h2FontSize:1.5rem;
+    --h3FontSize:1.3rem;
+    --normalFontSize:1rem;
+    --smallFontSize:0.85rem;
+    --samallerFontSize:0.75rem;
+    }
+}
