@@ -13,10 +13,12 @@
     --titleColor: hsl(var(--hueColor),8%,15%);
     --textColor: hsl(var(--hueColor),8%,45%);
     --textColorLighter: hsl(var(--hueColor),8%,65%);
-    --textColorLighter2: hsl(var(--hueColor),20%,20%);
     --inputColor: hsl(var(--hueColor),70%,96%);
     --bodyColor: hsl(var(--hueColor),60%,99%);
     --containerColor: #fff;
+    /*scroll bar color*/
+    --scrollBarColor:hsl(var(--hueColor),12%,90%);
+    --scrollThumbColor:hsl(var(--hueColor),12%,76%);
     /*font*/
     --bodyFont:'Poppins', sans-serif;
     /*size*/
@@ -48,6 +50,8 @@ body.dark_theme{
     --inputColor: hsl(var(--hueColor),29%,16%);
     --bodyColor: hsl(var(--hueColor),28%,12%);
     --containerColor: hsl(var(--hueColor),29,16);
+    --scrollBarColor:hsl(var(--hueColor),12%,46%);
+    --scrollThumbColor:hsl(var(--hueColor),12%,36%);
 }
 *{
     box-sizing: border-box;
@@ -434,4 +438,17 @@ img{
 }
 .show_scroll{
     bottom: 5rem;
+}
+/*webKit*/
+::-webkit-scrollbar{
+    width: .65rem;
+    background-color: var(--scrollBarColor);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--scrollThumbColor);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--textColorLighter);
 }
