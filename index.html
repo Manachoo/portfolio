@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -150,6 +151,57 @@
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">my Skills</span>
         </section>
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">most recent</span>
+            <div class="portfolio__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/img/portfolio1.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">website 1</h3>
+                            <p class="portfolio__description">Lorem ipsum dolor sit amet consequat tempor. Nonumy sea et takimata clita magna lorem ut nam kasd quis veniam sanctus erat ut eirmod consetetur. Lorem diam consequat illum.</p>
+                            <a href="#" class="button button__flex button__small portfolio__button">
+                                Demo
+                                <i class="uil uil-angle-right-b button_icon"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/img/portfolio2.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">website 2</h3>
+                            <p class="portfolio__description">Lorem ipsum dolor sit amet consequat tempor. Nonumy sea et takimata clita magna lorem ut nam kasd quis veniam sanctus erat ut eirmod consetetur. Lorem diam consequat illum.</p>
+                            <a href="#" class="button button__flex button__small portfolio__button">
+                                Demo
+                                <i class="uil uil-angle-right-b button_icon"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="portfolio__content grid swiper-slide">
+                        <img src="/img/portfolio3.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">website 3</h3>
+                            <p class="portfolio__description">Lorem ipsum dolor sit amet consequat tempor. Nonumy sea et takimata clita magna lorem ut nam kasd quis veniam sanctus erat ut eirmod consetetur. Lorem diam consequat illum.</p>
+                            <a href="#" class="button button__flex button__small portfolio__button">
+                                Demo
+                                <i class="uil uil-angle-right-b button_icon"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right swiper_portfolio_icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left swiper_portfolio_icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
         <section class="contact section" id="contact">
             <h2 class="section__title">contact me</h2>
             <span class="section__subtitle">Get in touch</span>
@@ -231,6 +283,7 @@
     <a href="#" class="scroll__up" id="scroll_up">
         <i class="uil uil-arrow-up scroll__up_icon"></i>
     </a>
+    <script src="/js/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

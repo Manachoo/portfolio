@@ -4,7 +4,7 @@
 :root{
     --headerHeight : 3rem;
     /*main color*/
-    --hueColor: 32;
+    --hueColor: 68;
     /*colors*/
     --firstColor: hsl(var(--hueColor),69%,61%);
     --firstColorSecond: hsl(var(--hueColor),69%,61%);
@@ -56,7 +56,7 @@ body.dark_theme{
 *{
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0 0 4px;
 }
 html{
     scroll-behavior: smooth;
@@ -295,6 +295,42 @@ img{
 .about__buttons{
     display: flex;
     justify-content: center;
+}
+/*portfolio*/
+.portfolio__container{
+    overflow: initial;
+}
+.portfolio__content{
+    padding: 0 2rem;
+}
+.portfolio__img{
+    width: 305px;
+    border-radius: .5rem;
+    justify-content: center;
+}
+.portfolio__title{
+    font-size: var(--h3FontSize);
+    margin-bottom: var(--mb05);
+}
+.portfolio__description{
+    margin-bottom: var(--mb075);
+}
+.portfolio__button:hover .button_icon{
+transform: translateX(.25rem);
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    display: none;
+}
+.swiper_portfolio_icon{
+    font-size: 2rem;
+    color: var(--firstColor);
+}
+.swiper-button-next{
+    right: -.5rem;
+}
+.swiper-button-prev{
+    left: -var(--firstColor);
 }
 /*contact*/
 .contact__container{
@@ -548,6 +584,7 @@ img{
     }
     .nav__menu{
         margin-left: auto;
+        margin-top: .8rem;
     }
     .change_theme{
         margin: 1rem;
@@ -663,15 +700,16 @@ img{
     .swiper_portfolio_icon{
         font-size: 3.5rem;
     }
-    .swiper_button_prev{
+    .swiper-button-prev{
         left: -3.5rem;
     }
-    .swiper_button_next{
+    .swiper-button-next{
         right: -3.5rem;
     }
-    .swiper_container_horizontal > .swiper_pagination_bullets{
+    /*
+    .swiper-container-horizontal > .swiper-pagination-bullets{
         bottom: -4.5rem;
-    }
+    }*/
     .contact__form{
         width: 460px;
     }
