@@ -78,6 +78,25 @@ themeButton.addEventListener('click',() =>{
     localStorage.setItem('selected_theme', getCurrentTheme());
     localStorage.setItem('selected_icon', getCurrentIcon());
 });
+//show and close modal
+const modalViews = document.querySelectorAll('.services__modal');
+const modalButtons = document.querySelectorAll('.services__button');
+const modalCloses = document.querySelectorAll('.services__modal_close');
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active_modal');
+};
+modalButtons.forEach((modalButton, i) => {
+    modalButton.addEventListener('click',() =>{
+        modal(i)
+    })
+});
+modalCloses.forEach((modalClose,i) =>{
+    modalClose.addEventListener('click',() =>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active_modal')
+        })
+    })
+});
 //swaper
 let swiper = new Swiper(".portfolio__container", {
     cssMode: true,
