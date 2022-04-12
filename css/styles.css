@@ -4,9 +4,9 @@
 :root{
     --headerHeight : 3rem;
     /*main color*/
-    --hueColor: 180;
+    --hueColor: 51;
     /*colors*/
-    --firstColor: hsl(var(--hueColor),69%,61%);
+    --firstColor: hsl(var(--hueColor),89%,51%);
     --firstColorSecond: hsl(var(--hueColor),69%,61%);
     --firstColorAlt: hsl(var(--hueColor),57%,53%);
     --firstColorlighter: hsl(var(--hueColor),92%,85%);
@@ -14,8 +14,8 @@
     --textColor: hsl(var(--hueColor),8%,45%);
     --textColorLighter: hsl(var(--hueColor),8%,65%);
     --inputColor: hsl(var(--hueColor),70%,96%);
-    --bodyColor: hsl(var(--hueColor),60%,99%);
-    --containerColor: hsl(var(--hueColor),60%,99%);
+    --bodyColor: hsl(var(--hueColor),62%,99%);
+    --containerColor: #fff;
     /*scroll bar color*/
     --scrollBarColor:hsl(var(--hueColor),12%,90%);
     --scrollThumbColor:hsl(var(--hueColor),12%,76%);
@@ -52,7 +52,7 @@ body.dark_theme{
     --titleColor: hsl(var(--hueColor),8%,95%);
     --textColor: hsl(var(--hueColor),8%,75%);
     --inputColor: hsl(var(--hueColor),29%,16%);
-    --bodyColor: hsl(var(--hueColor),28%,12%);
+    --bodyColor: hsl(var(--hueColor),38%,22%);
     --containerColor: #fff;
     --scrollBarColor:hsl(var(--hueColor),12%,46%);
     --scrollThumbColor:hsl(var(--hueColor),12%,36%);
@@ -339,6 +339,7 @@ img{
     font-size: var(--h3FontSize);
     margin-bottom: var(--mb1);
     font-weight: var(--fontMedium);
+    color: black;
 }
 .services__button{
     cursor: pointer;
@@ -765,6 +766,8 @@ transform: translateX(.25rem);
     }
     .footer__bg{
         padding: 3rem 0 3.5rem;
+        position: relative;
+        bottom: -43px;
     }
     .footer__social{
         margin: 0;
