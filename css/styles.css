@@ -372,11 +372,13 @@ img{
 }
 .services__modal_service{
     display: flex;
+    color: rgba(0,0,0,.5);
 }
 .services__modal_title{
     font-size: var(--h3FontSize);
     font-weight: var(--fontMedium);
     margin: var(--mb15);
+    color: rgba(0,0,0);
 }
 .services__modal_close{
     position: absolute;
