@@ -56,6 +56,23 @@ function scrollTop(){
     if(this.scrollY >= 560) scrollTop.classList.add('show_scroll'); else scrollTop.classList.remove('show_scroll')
 };
 window.addEventListener('scroll',scrollTop)
+//skills dropdown
+const skillsContent = document.getElementsByClassName('skills__content');
+const skillsheader = document.querySelectorAll('.skills__header');
+
+function toggleSkills(){
+    let itemClass = this.parentNode.className
+
+    for(i = 0; i< skillsContent.length; i++){
+        skillsContent[i].className = 'skills__content skills__close'
+    }
+    if(itemClass === 'skills__content skills__close'){
+        this.parentNode.className = 'skills__content skills__open'
+    }
+};
+skillsheader.forEach((me) =>{
+    me.addEventListener('click',toggleSkills)
+});
 //dark theme
 const themeButton = document.getElementById('theme_button');
 const darkTheme = 'dark_theme';
