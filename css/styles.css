@@ -299,7 +299,7 @@ img{
     margin-bottom: var(--mb2);
 }
 .about__info_title{
-    font-size: var(--h2FontSize);
+    font-size: var(--h3FontSize);
     font-weight: var(--fontMedium);
     display: block;
     text-align: center;

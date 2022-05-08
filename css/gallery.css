@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    margin: 0;
+    font-family: monospace;
+}
+h1{
+    text-align: center;
+    color: #4444;
+}
+.gallery--container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,230px);
+    padding: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+.gallery--item{
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: lightgrey;
+}
+.gallery--title{
+    position: absolute;
+    bottom: 0;
+}
+.gallery--img{
+    width: 230px;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+.button--gallery{
+    position: absolute;
+    bottom: 0;
+}
+.button{
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    border-radius: .5rem;
+    font-weight: medium;
+    transition: .5s;
+    margin-bottom: .4rem;
+    margin-left: .5rem;
+    padding: .1rem;
+}
+.button_flex{
+    display: inline-flex;
+    align-items: center;
+}
+.services__button{
+    cursor: pointer;
+    font-size: small;
+}
+.services__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: 99999;
+    opacity:0;
+    visibility: hidden;
+    transition: .4s;
+}
+.services__modal_content{
+    position: relative;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1 .5fr);
+}
+.services__modal_servics{
+    row-gap: 1rem;
+}
+.services__modal_service{
+    display: flex;
+    color: rgba(0,0,0,.5);
+}
+.services__modal_title{
+    font-size: medium;
+    font-weight: bold;
+    margin: .15rem;
+    color: rgba(0,0,0);
+}
+.services__modal_close{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+.services__modal_icon{
+    color: black;
+    margin-right: .25rem;
+}
+.button:hover{
+    transform: translateX(.25rem);
+    background-color: blue;
+}
+.active_modal{
+    opacity: 1;
+    visibility: visible;
+}
+/*media query de 767px para el modal con la imagen*/
